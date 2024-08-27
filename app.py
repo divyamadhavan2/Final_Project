@@ -118,7 +118,7 @@ def preprocess_input(input_data):
 def main_app():
     # Load your trained xgboost model
     try:
-        model = joblib.load(r'E:\Masters Project\Final_Final\finalized_model.pkl')  # Ensure to use the correct path
+        model = joblib.load('finalized_model.pkl')  # Ensure to use the correct path
         st.write("Model loaded successfully")
 
         # Define the target variable encoder
