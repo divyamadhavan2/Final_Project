@@ -44,8 +44,8 @@ def set_bg_color(color):
         '''
     st.markdown(page_bg_color, unsafe_allow_html=True)
 
-# Set the background to a light gray color
-set_bg_color("#B3D7C3")  # Light gray background
+# Set the background color
+set_bg_color("#B3D7C3")  #  background color
 
 # Simple authentication function
 def check_password():
@@ -53,7 +53,7 @@ def check_password():
     st.markdown("""
     <style>
         [data-testid=stSidebar] {
-            background-color: #99a3a4; /* Change this to your desired color */
+            background-color: #99a3a4; /bg color/
         }
     </style>
     """, unsafe_allow_html=True)
@@ -149,10 +149,12 @@ def main_app_model():
         st.error(f"Error loading model: {e}")
         return
 
-    st.title("Student Grade Prediction App")
+    st.title("Student Grade Prediction Application")
     st.write(
     """
     This app predicts student grades and provides insights to help educators and management understand and improve student performance.
+    The application leverages the XGBoost machine learning model.
+    
     """
     )
 
